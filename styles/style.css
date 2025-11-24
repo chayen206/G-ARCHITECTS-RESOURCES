@@ -12,6 +12,7 @@
     padding: 0px;
 }
 
+
 /* share styles */
 .dark-1{
     color: #131313;
@@ -24,6 +25,14 @@
 }
 .flex{
     display: flex;
+}
+
+.use-heading{
+    font-size: 2.9rem;
+    font-weight: bold;
+}
+.use-des {
+    margin-top: 1rem;
 }
 .bg{
     background-color: rgba(255, 144, 14, 0.1);
@@ -121,14 +130,123 @@ max-width: 1400px;
  .yellow{
     color: #FF900E;
  }
+ /* facts style */
+ .facts{
+    max-width: 1400px;
+    margin: 0px auto;
+    margin-top: 150px;
+ }
+.card-point{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+ .card{
+    display: flex;
+  width: 200px;
+  height: 200px;
+  margin-top: 80px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .card-father{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+ }
+ /* sponspors styles */
+.sponspors{
+    margin-top: 80px;
+}
+ .sponspors-headline{
+    max-width: 500px;
+    margin: 0px auto;
+ }
+ .sponspors-logo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    margin-top: 45px;
+ }
+ .sponspors-logo> img{
+    filter: grayscale();
+ }
+ /* features style */
+ .features{
+    display: flex;
+    max-width: 1400px;
+   
+    margin: 80px auto;
+    gap: 80px;
+
+ }
+ .year{
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+ }
+ .Experience-s{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+ }
+ .feature-btn-div{
+    margin-left: -90px;
+    margin-top: -90px;
+ }
+ .feature-btn{
+    background-color: #FF900E;
+    padding: 40px;
+    border: none;
+    border-radius: 8px;
+ }
+ .f-heading{
+    border-left: 4px solid #FF900E;
+    padding-left: 18px;
+ }
+ .features-headline{
+    margin-bottom: 50px;
+ }
+ .features-headline-continer{
+    width: 50%;
+    height: 100%;
+   
+ }
+ .f-img{
+    width: 100%;
+ }
+ .features-card-continer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+ }
+ .feature-card{
+    
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+ }
+ .feature-card-heading{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 9px;
+ }
+ .feature-img-div{
+    width: 50%;
+ }
+
 /* media medium device */
 @media (min-width: 431px) and (max-width:935px) {
     .pic-continer{
         flex-direction: column;
     }
+   
      .pic-parent{
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+        justify-items: center;
     }
    .pic-etc{
     margin-left: 40px;
@@ -136,6 +254,34 @@ max-width: 1400px;
     header{
             margin: 20px;
         }
+         .card-father{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+    .facts{
+        margin: 40px;
+    }
+     .sponspors-logo{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+     .features{
+        flex-direction: column;
+        margin: 20px;
+    }
+      .features-headline-continer{
+        width: 100%;
+    }
+    .feature-img-div{
+        width: 100%;
+    }
+    .feature-btn-div{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+   
+        
     
 }
 
@@ -144,6 +290,18 @@ max-width: 1400px;
         .navber, .nav-links,  .pic-continer{
             flex-direction: column;
             
+        }
+     
+           .pic-parent{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+        .facts{
+            margin: 10px;
+        }
+        .card-father{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
         }
         header{
             margin: 20px;
@@ -154,6 +312,33 @@ max-width: 1400px;
         gap: 15px;
     }
     .pic-etc{
+        margin: 20px;
+    }
+    .sponspors-logo{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .sponspors{
+        margin: 20px ;
+        
+    }
+    .sponspors-continer{
+        text-align: center;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .feature-btn-div{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .features-headline-continer{
+        width: 100%;
+    }
+    .feature-img-div{
+        width: 100%;
+    }
+    .features{
         margin: 20px;
     }
         
